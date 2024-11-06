@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CsvProcessorApplication {
+public class CSVProcessorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CsvProcessorApplication.class, args);
+		SpringApplication.run(CSVProcessorApplication.class, args);
 	}
 
 }
