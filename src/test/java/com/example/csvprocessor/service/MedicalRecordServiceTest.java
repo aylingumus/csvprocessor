@@ -114,9 +114,10 @@ class MedicalRecordServiceTest {
 
     @Test
     void uploadCSV_WhenAllRecordsAlreadyExist_ShouldNotSaveAnyRecord() {
-        String csvContent = "source,codeListCode,code,displayValue,longDescription,fromDate,toDate,sortingPriority\n" +
-                "ZIB,ZIB001,271636001,Test,,01-01-2019,,1\n" +
-                "ZIB,ZIB001,61086009,Test 2,,01-01-2019,,2";
+        String csvContent = """
+                source,codeListCode,code,displayValue,longDescription,fromDate,toDate,sortingPriority
+                ZIB,ZIB001,271636001,Test,,01-01-2019,,1
+                ZIB,ZIB001,61086009,Test 2,,01-01-2019,,2""";
         MockMultipartFile file = new MockMultipartFile(
                 "file",
                 "test.csv",
